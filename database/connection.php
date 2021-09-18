@@ -6,7 +6,6 @@ try {
     echo 'ERROR: ' . $e->getMessage();
 }
 
-
 // Select all infos from the database
 //$sql = 'SELECT * FROM users';
 

@@ -1,13 +1,10 @@
 <?php
 session_start();
-include 'database/connection.php';
-//include 'database/userSession.php';
-
+require_once 'database/connection.php';
+require_once 'userSession.php';
 
 $name = $_SESSION['userName'];
 $age = $_SESSION['userAge'];
-
-var_dump($name);
 ?>
 
 <!DOCTYPE html>
@@ -20,7 +17,7 @@ var_dump($name);
 </head>
 <body>
     <?php 
-        echo "Hello, $name";
+        echo "Hello, <b>$name</b><br>I guess your age is <b>$age</b>";
     ?>
 </body>
 </html>
