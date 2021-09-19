@@ -15,7 +15,4 @@ try {
 // Fetch the resulting rows as arrays
 //$users = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
-
-
-
 ?>

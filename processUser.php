@@ -12,7 +12,7 @@ if($userName && $userAge){
 }else{
     unset($_SESSION['userName']);
     unset($_SESSION['userAge']);
-
+    
     header('Location:../index.php?error=processuser');
 }
 ?>

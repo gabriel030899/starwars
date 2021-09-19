@@ -11,7 +11,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
-    
     <div class="page_top">
         <div class="user_info">
             <div class="user_info_title">
@@ -19,7 +18,7 @@
             </div>
             <div class="user_info_form">
                 <h3>May the <b>FORCE</b> know your <b>name</b> and <b>age</b>:</h3>
-                <form method="post" action="processUser.php" id="user_form">
+                <form method="post" action="homepage.php" id="user_form">
                     <div class="form_data">
                         <label for="">Name:</label>
                         <input type="text" name="userName" required>
@@ -35,6 +34,5 @@
             </div>
         </div>    
     </div>
-    
 </body>
 </html>

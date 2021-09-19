@@ -1,10 +1,16 @@
 <?php
 session_start();
 require_once 'database/connection.php';
-require_once 'userSession.php';
+include_once 'database/processUserClass.php';
 
-$name = $_SESSION['userName'];
-$age = $_SESSION['userAge'];
+$userName = $_POST['userName'] ?? "";
+$userAge = $_POST['userAge'] ?? "";
+
+$name = $_SESSION['userName'] ?? "";
+$age = $_SESSION['userAge'] ?? "";
+
+$userSession = new ProcessUser();
+$userSession->processData($userName, $userAge);
 ?>
 
 <!DOCTYPE html>
