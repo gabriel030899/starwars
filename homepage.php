@@ -6,11 +6,12 @@ include_once 'database/processUserClass.php';
 $userName = $_POST['userName'] ?? "";
 $userAge = $_POST['userAge'] ?? "";
 
-$name = $_SESSION['userName'] ?? "";
-$age = $_SESSION['userAge'] ?? "";
+$name = $_SESSION['userName'];
+$age = $_SESSION['userAge'];
 
 $userSession = new ProcessUser();
 $userSession->processData($userName, $userAge);
+
 ?>
 
 <!DOCTYPE html>

@@ -6,15 +6,18 @@ public $userName;
 public $userAge;
 
 public function processData($userName, $userAge){
-    if(isset ($_SESSION)){
+    if($_SESSION != NULL){
+
         unset($_SESSION['userName']);
         unset($_SESSION['userAge']);
+        
     }else{
         if($userName && $userAge){
             $_SESSION['userName'] = $userName;
             $_SESSION['userAge'] = $userAge;
-            
+
             header('Location:homepage.php');
+            
         }else{
             unset($_SESSION['userName']);
             unset($_SESSION['userAge']);
