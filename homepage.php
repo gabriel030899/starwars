@@ -1,19 +1,3 @@
-<?php
-session_start();
-require_once 'database/connection.php';
-include_once 'database/processUserClass.php';
-
-$userName = $_POST['userName'] ?? "";
-$userAge = $_POST['userAge'] ?? "";
-
-$name = $_SESSION['userName'];
-$age = $_SESSION['userAge'];
-
-$userSession = new ProcessUser();
-$userSession->processData($userName, $userAge);
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,7 +8,7 @@ $userSession->processData($userName, $userAge);
 </head>
 <body>
     <?php 
-        echo "Hello, <b>$name</b><br>I guess your age is <b>$age</b>";
+        echo "Hello, <b>Nome</b><br>I guess your age is <b>Idade</b>";
     ?>
 </body>
 </html>
