@@ -1,0 +1,31 @@
+@mixin bodyFormat(){
+    background: black url('../../assets/img/universe.jpg') no-repeat center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+@mixin flexCenter(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flexAdj($display, $justify, $align, $flow){ // display, justify-content, align-items, flex-flow
+    display: $display;
+    justify-content: $justify;
+    align-items: $align;
+    flex-flow: $flow;
+}
+@mixin borderAdj($b_top, $b_right, $b_bot, $b_left){ // border top, right, bottom, left
+    border-top: $b_top;
+    border-right: $b_right;
+    border-bottom: $b_bot;
+    border-left: $b_left;
+    border-style: solid;
+}
+@mixin objSize($height, $width) { // height, width
+    height: $height;
+    width: $width;
+}
+

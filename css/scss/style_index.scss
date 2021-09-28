@@ -1,112 +1,80 @@
+@import './var_index';
+@import './fun_index';
+
+*{
+    color: $secondaryColor;
+}
 body{
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    box-sizing: content-box;
-    width: 100vw;
-    height: 100vh;
-    background: black url('../../assets/img/universe.jpg') no-repeat center fixed;
-    background-size: cover;
-    margin: 0;
-    padding: 0;
-    font-family: 'Open Sans', sans-serif;
+    @include flexAdj(flex, flex-start, flex-start, row);
+    @include bodyFormat();
 
     b{
-        color: yellow;
+        color: $mainColor;
     }
 }
-
 .page_top{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100vw;
+    @include flexCenter();
+    @include objSize(100vh, 100vw);
 }
 .user_info{
-    display: flex;
-    flex-flow: column;
-    justify-content: flex-start;
-    align-items: center;
-    width: 400px;
-    height: 320px;
-    border: 1px solid yellow;
-    background-color: rgba(235, 235, 235, 0.253);
+    @include flexAdj(flex, flex-start, center, column);
+    @include objSize(320px, 400px);
+    border: 1px solid $mainColor;
+    background-color: $backgroundColor;
     border-radius: 10px;
 }
 .user_info_title{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column;
-    height: 15%;
-    width: 100%;
-    color: white;
-    border: 1px solid yellow;
-    border-top: 0;
-    border-right: 0;
-    border-left: 0;
-}
-.user_info_title h2{
-    margin: 0;
+    @include flexAdj(flex, center, center, column);
+    @include borderAdj(0, 0, 1px, 0);
+    @include objSize(15%, 100%);
+    border-color: $mainColor;
+    h2{
+        margin: 0;
+    }
 }
 .user_info_form{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-flow: column;
-    height: 100%;
-    width: 100%;
-    color: white;
+    @include flexAdj(flex, flex-start, center, column);
+    @include objSize(100%, 100%);
 }
 #user_form{
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-    flex-flow: column;
+    @include flexAdj(flex, flex-start, flex-end, column);
     margin: 20px 0 0 0;
 }
 .form_data{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px 0 10px 0 ;
-}
-.form_data label{
-    margin: 0 20px 0 0;
-    color: yellow;
-    font-size: 20px;
-}
-.form_data input{
-    width: 200px;
-    height: 20px;
-    background-color: transparent;
-    border: 1px solid yellow;
-    border-top: 0;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    outline: none;
-    color: white;
-    font-size: 15px;
+    @include flexCenter();
+    margin: 10px 0 10px 0;
+
+    label{
+        margin: 0 20px 0 0;
+        color: $mainColor;
+        font-size: 20px;
+    }
+    input{
+        @include borderAdj(0, 1px, 1px, 1px);
+        @include objSize(20px, 200px);
+        background-color: transparent;
+        border-color: $mainColor;
+        border-radius: 5px;
+        outline: none;
+        font-size: 15px;
+    }
 }
 .form_button_div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexCenter();
     width: 100%;
 }
 #form_button{
+    @include objSize(40px, 100px);
     background-color: transparent;
-    border: 2px solid yellow;
-    color: yellow;
-    height: 40px;
-    width: 100px;
+    border: 2px solid $mainColor;
+    color: $mainColor;
     border-radius: 10px;
-    -webkit-transition: 200ms ease-in;
+    -webkit-transition: $transition;
     cursor: pointer;
     margin: 20px 0 0 0;
-}
-#form_button:hover{
-    background-color: rgba(235, 235, 235, 0.253);
-    -webkit-transition: 200ms ease-in;
+
+    &:hover{
+        background-color: $backgroundColor;
+        -webkit-transition: $transition;
+        }
 }

@@ -1,3 +1,7 @@
+* {
+  color: #f2f5ff;
+}
+
 body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8,15 +12,17 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
-  width: 100vw;
-  height: 100vh;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
   background: black url("../../assets/img/universe.jpg") no-repeat center fixed;
   background-size: cover;
   margin: 0;
   padding: 0;
   font-family: 'Open Sans', sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body b {
@@ -41,18 +47,18 @@ body b {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 400px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
   height: 320px;
+  width: 400px;
   border: 1px solid yellow;
   background-color: rgba(235, 235, 235, 0.253);
   border-radius: 10px;
@@ -72,13 +78,14 @@ body b {
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
-  height: 15%;
-  width: 100%;
-  color: white;
-  border: 1px solid yellow;
   border-top: 0;
   border-right: 0;
+  border-bottom: 1px;
   border-left: 0;
+  border-style: solid;
+  height: 15%;
+  width: 100%;
+  border-color: yellow;
 }
 
 .user_info_title h2 {
@@ -101,7 +108,6 @@ body b {
           flex-flow: column;
   height: 100%;
   width: 100%;
-  color: white;
 }
 
 #user_form {
@@ -141,15 +147,17 @@ body b {
 }
 
 .form_data input {
-  width: 200px;
-  height: 20px;
-  background-color: transparent;
-  border: 1px solid yellow;
   border-top: 0;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-right: 1px;
+  border-bottom: 1px;
+  border-left: 1px;
+  border-style: solid;
+  height: 20px;
+  width: 200px;
+  background-color: transparent;
+  border-color: yellow;
+  border-radius: 5px;
   outline: none;
-  color: white;
   font-size: 15px;
 }
 
@@ -167,19 +175,19 @@ body b {
 }
 
 #form_button {
+  height: 40px;
+  width: 100px;
   background-color: transparent;
   border: 2px solid yellow;
   color: yellow;
-  height: 40px;
-  width: 100px;
   border-radius: 10px;
-  -webkit-transition: 200ms ease-in;
+  -webkit-transition: 200ms ease-in-out;
   cursor: pointer;
   margin: 20px 0 0 0;
 }
 
 #form_button:hover {
   background-color: rgba(235, 235, 235, 0.253);
-  -webkit-transition: 200ms ease-in;
+  -webkit-transition: 200ms ease-in-out;
 }
 /*# sourceMappingURL=style_index.css.map */
