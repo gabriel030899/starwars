@@ -182,6 +182,7 @@ body b {
   color: yellow;
   border-radius: 10px;
   -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
   cursor: pointer;
   margin: 20px 0 0 0;
 }
@@ -189,5 +190,6 @@ body b {
 #form_button:hover {
   background-color: rgba(235, 235, 235, 0.253);
   -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
 }
 /*# sourceMappingURL=style_index.css.map */

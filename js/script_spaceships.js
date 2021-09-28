@@ -11,7 +11,7 @@ nextButton.addEventListener('click', ()=>{
     }else{
         spaceNum = spaceNum+1;
     }
-    shipDiv.innerHTML = `<img src="assets/img/spaceship${spaceNum}.png" id="mi_spaceship_one" alt="Spaceship-${spaceNum}">`;
+    shipDiv.innerHTML = `<img src="assets/img/spaceship${spaceNum}.png" id="mi_spaceship_${spaceNum}" alt="Spaceship-${spaceNum}">`;
 });
 // -- BACK BUTTON
 backButton.addEventListener('click', ()=>{
@@ -20,6 +20,6 @@ backButton.addEventListener('click', ()=>{
     }else{
         spaceNum = spaceNum-1;
     }
-    shipDiv.innerHTML = `<img src="assets/img/spaceship${spaceNum}.png" id="mi_spaceship_one" alt="Spaceship-${spaceNum}">`;
+    shipDiv.innerHTML = `<img src="assets/img/spaceship${spaceNum}.png" id="mi_spaceship_${spaceNum}" alt="Spaceship-${spaceNum}">`;
 });
 

@@ -83,6 +83,17 @@ body{
         }
     }
 }
+
+// CONTENT PAGE
+
+.content_page{
+    @include flexAdj(flex, flex-start, center, row);
+}
+.movie{
+    @include flexCenter();
+    @include objSize(100%, 1500px);
+}
+
 // RESPONSIVIDADE MOBILE
 @media (max-width: 1400px){
     #mi_spaceship_one{

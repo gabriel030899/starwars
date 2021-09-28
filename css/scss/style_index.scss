@@ -69,12 +69,12 @@ body{
     border: 2px solid $mainColor;
     color: $mainColor;
     border-radius: 10px;
-    -webkit-transition: $transition;
+    transition: $transition;
     cursor: pointer;
     margin: 20px 0 0 0;
 
     &:hover{
         background-color: $backgroundColor;
-        -webkit-transition: $transition;
+        transition: $transition;
         }
 }
