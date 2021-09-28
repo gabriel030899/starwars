@@ -53,11 +53,11 @@ body{
     border-radius: 50px;
     border: 1px solid $mainColor;
     cursor: pointer;
-    -webkit-transition: 150ms ease-in-out;
+    transition: $transition;
 
     &:hover{
         background-color: $backgroundColor;
-        -webkit-transition: 150ms ease-in-out;    
+        transition: $transition;
     }
 }
 #mi_spaceship_one{

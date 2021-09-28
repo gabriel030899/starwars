@@ -147,12 +147,14 @@ body b {
   border-radius: 50px;
   border: 1px solid yellow;
   cursor: pointer;
-  -webkit-transition: 150ms ease-in-out;
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
 }
 
 .ship_buttons:hover {
   background-color: rgba(235, 235, 235, 0.253);
-  -webkit-transition: 150ms ease-in-out;
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
 }
 
 #mi_spaceship_one {
