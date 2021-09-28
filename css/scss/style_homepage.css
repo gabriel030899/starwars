@@ -202,14 +202,14 @@ body b {
 
 @media (max-width: 1400px) {
   #mi_spaceship_one {
-    height: 220px;
+    height: 200px;
     width: auto;
   }
 }
 
 @media (max-width: 1100px) {
   #mi_spaceship_one {
-    height: 300px;
+    height: 280px;
     width: auto;
     padding-right: 70px;
   }

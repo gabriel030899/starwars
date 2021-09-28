@@ -21,9 +21,9 @@
                 <p>Choose a spaceship to <b>EXPLORE THE STARS</b>!</p>
             </div>
             <div class="mi_bot">
-                <button type="button" class="ship_buttons" id="before_ship">Back</button>
+                <button type="button" class="ship_buttons" id="back_ship">Back</button>
                 <div class="space_images">
-                    <img src="assets/img/spaceship2.png" id="mi_spaceship_one" alt="Spaceship-One">
+                    <img src="assets/img/spaceship1.png" id="mi_spaceship_one" alt="Spaceship-One">
                 </div>
                 <button type="button" class="ship_buttons" id="next_ship">Next</button>
             </div>
@@ -32,5 +32,9 @@
             </div>
         </div>
     </div>
+    <div class="content_page">
+        
+    </div>
+    <script src="js/script_spaceships.js"></script>
 </body>
 </html>

@@ -19,7 +19,7 @@
             </div>
             <div class="user_info_form">
                 <h3>May the <b>FORCE</b> know your <b>name</b> and <b>age</b>:</h3>
-                <form method="post" action="sessionStart.php" id="user_form">
+                <form method="post" action="database/sessionStart.php" id="user_form">
                     <div class="form_data">
                         <label for="">Name:</label>
                         <input type="text" name="userName" required>
